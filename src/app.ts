@@ -6,7 +6,8 @@ app.use(express.json())
 app.use(urlencoded({ extended: true }))
 
 app.get('/', async (req: Request, res: Response) => {
-    res.json('PROJECT STARTED ON BROWSWER').send("University-management project on browser")
+  res
+    .json('PROJECT STARTED ON BROWSWER')
+    .send('University-management project on browser')
 })
-
 export default app
